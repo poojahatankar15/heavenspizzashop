@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+margin:0;
+padding:0;
+font-family:Times New Roman;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e41212;;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 25px;
+  text-decoration: none;
+  font-size:20px;
+background-color: #e41212;
+}
+
+li a:hover {
+  background-color: #e8b93f;
+color:black;
+}
+
+.footer {
+ position: static;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+  text-align:center;
+  padding: 2px;
+  background-color:#e41212;
+  color: white;
+}
+
+.a{
+font-size:40px;
+color:white;
+text-align: center;
+ padding: 14px 16px;
+background-color:#e41212;
+}
+
+/*form start*/
+input[type=text], input[type=password], input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #e41212;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=button] {
+  width: 100%;
+  background-color: #e41212;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+table .input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+width:100%;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+label {
+font-size: 20px;
+}
+
+/*form end*/
+
+/*tooltip start*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/*tooltip end*/
+
+.main {
+width:60%;
+border-radius: 0px;
+padding: 20px;
+background:#F0E68C;
+margin-left:20%;
+margin-bottom:5%;
+box-shadow: -3px 3px 20px #111111 ;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="index.html">Login</a></li>
+  <li><a href="feedback.html">Feedback</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="homepage.html">Home</a></li>
+<li class="a" style="float:left">&#x1f355; Heaven's Pizza</li>
+</ul>
+<h1 align="center" style="color:red;">Registration Form</h1>
+
+<div align="center" class="main">
+  <form action="/registration.php" method="POST">
+<table border="0" width="60%" height="100%">
+<tr>
+     <td align="right"> <label for="fname"><b>First Name:</b></label></td>
+     <td class="tooltip"><input type="text" placeholder="Enter First Name" name="fname" required><span class="tooltiptext">Your First Name would be saved as Your Username.</span></td>
+</tr>
+<tr>
+     <td align="right"> <label for="lname" align="right"><b>Last Name:</b></label></td>
+     <td> <input type="text" placeholder="Enter Last Name" name="lname" required></td>
+</tr>
+<tr>
+    <td align="right"><label for="email"><b>Email:</b></label></td>
+    <td><input type="text" placeholder="Enter Email" name="email" required></td>
+</tr>
+<tr>
+     <td align="right"> <label for="mnumber"><b>Mobile Number:</b></label></td>
+     <td> <input type="number" id="mnumber" name="mnumber" placeholder="+91" maxlength="10"></td>
+</tr>
+<tr>
+    <td align="right"><label for="address"><b>Residential Address:</b></label></td>
+    <td><textarea id="address" name="address" placeholder="Write something.." style="height:100px; width:300px"></textarea></td>
+</tr>
+<tr>
+      <td align="right"><label for="psw"><b>Password:</b></label></td>
+     <td><input type="password" placeholder="Enter Password" name="pass" id="password" required></td>
+</tr>
+<tr>
+     <td align="right"><label for="psw-repeat"><b>Confirm Password:</b></label></td>
+     <td><input type="password" placeholder="Confirm Password" name="psw-repeat" id="confirm_password" required>
+<script>
+var password = document.getElementById("password")
+  , confirm_password = document.getElementById("confirm_password");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+</script>
+</td>
+</tr>
+<tr>
+    <td colspan="2" align="center"><input type="checkbox" checked="checked" name="t&c"> By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</td>
+</tr>
+</table>
+<table width="50%" height="100%">
+<tr>
+    <td><input type="button" value="Cancel"><a href="homepage.html"></a></td>
+    <td><input type="submit" value="Submit"></td>
+</tr>
+</table>
+  </form>
+</div>
+
+
+<div class="footer">
+  <p align="right">All rights reserved. Copyright &#169; DNP Food Factory Ltd. &nbsp;&nbsp;</p>
+</div>
+
+</body>
+</html>

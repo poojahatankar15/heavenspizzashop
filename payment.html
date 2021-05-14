@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+$(function() {
+    $('input[name="type"]').on('click', function() {
+        if ($(this).val() == 'Online') {
+            $('#textboxes').show();
+        }
+        else {
+            $('#textboxes').hide();
+        }
+    });
+});
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+margin:0;
+padding:0;
+font-family:Times New Roman;
+}
+button {
+  width: 50%;
+  background-color: #e41212;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e41212;;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 25px;
+  text-decoration: none;
+  font-size:20px;
+background-color: #e41212;
+}
+
+li a:hover {
+  background-color: #e8b93f;
+color:black;
+}
+
+.footer {
+ position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+  text-align:center;
+  padding: 2px;
+  background-color:#e41212;
+  color: white;
+}
+
+.a{
+font-size:40px;
+color:white;
+text-align: center;
+ padding: 14px 16px;
+background-color:#e41212;
+}
+
+.main {
+width:50%;
+border-radius: 0px;
+padding: 20px;
+background:#F0E68C;
+margin-left:25%;
+margin-bottom:5%;
+box-shadow: -3px 3px 20px #111111 ;
+}
+
+label {
+font-size: 25px;
+}
+
+input[type=text], input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 30%;
+  background-color: #e41212;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menu {
+  border-radius: 5px;
+  background: #1874CD;
+  padding: 10px; 
+  width: 100px;
+  height: 20px; 
+  text-decoration:none;
+  font-size:20px;
+}
+
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.main {
+width:50%;
+border-radius: 0px;
+padding: 20px;
+background:#F0E68C;
+margin-left:25%;
+margin-bottom:5%;
+box-shadow: -3px 3px 20px #111111 ;
+}
+
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="index.html">Login</a></li>
+  <li><a href="feedback.html">Feedback</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="homepage.html">Home</a></li>
+<li class="a" style="float:left">&#x1f355; Heaven's Pizza</li>
+</ul>
+
+<h1 style="color:red;"><center>Payment</center></h1>
+
+<br><br>
+
+<center><h3>
+<input type="radio" name="type" value="COD">  &#x1F4B0;
+ Cash On Delivery <br>
+<input type="radio" name="type" value="Online"> &#x1f4b3; Online
+</h3></center>
+    
+<div id="textboxes" style="display: none" class="main">
+
+<table width="50%" height="100%" align="center">
+<br><br><br><br>
+<tr>
+     <td> <label for="cardname"><b>Name on Card</b></label></td>
+</tr>
+<tr>
+     <td> <input type="text" name="cardname"></td>
+</tr>
+<tr>
+     <td> <label for="cardno"><b>Credit/Debit Card Number</b></label></td>
+</tr>
+<tr>
+     <td> <input type="number" placeholder="1111-2222-3333-4444" name="cardno" required></td>
+</tr>
+<tr>
+
+<table width="50%" height="100%" align="center">
+<tr>
+     <td> <label for="cardno"><b>Exp</b></label></td>
+     <td> <label for="cardno"><b>CVV</b></label></td>
+</tr>
+<tr>
+     <td><input type="number" placeholder="MM/YY" name="cardno" required> </td>
+     <td> <input type="number" placeholder="123" name="cardno" required></td>
+</tr>
+</table>
+
+</tr>
+</table>
+
+<center>
+<button onclick="myMsg ()"> Add to Cart </button>
+</center>
+
+<br><br><br>
+</div>
+
+<script>
+function myMsg() {
+alert("Payment Done! Please Click on Continue");
+}
+</script>
+
+<center><div class="menu"><a href ="thanks.html">Continue</a></div></center>
+
+<br><br><br><br><br><br><br>
+
+<div class="footer">
+  <p align="right">All rights reserved. Copyright © DNP Food Factory Ltd. &nbsp;&nbsp;</p>
+</div>
+</body>
+</html>
+
+
+
+
+

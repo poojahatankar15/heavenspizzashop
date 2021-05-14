@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+margin:0;
+padding:0;
+font-family:Times New Roman;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e41212;;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 25px;
+  text-decoration: none;
+  font-size:20px;
+background-color: #e41212;
+}
+
+li a:hover {
+  background-color: #e8b93f;
+color:black;
+}
+
+.footer {
+ position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+  text-align:center;
+  padding: 2px;
+  background-color:#e41212;
+  color: white;
+}
+
+.a{
+font-size:40px;
+color:white;
+text-align: center;
+ padding: 14px 16px;
+background-color:#e41212;
+}
+
+/*form start*/
+input[type=text], input[type=password], input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 30%;
+  background-color: #e41212;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+table .input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+width:100%;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+label {
+font-size: 25px;
+}
+
+/*form end*/
+
+.main {
+width:50%;
+border-radius: 0px;
+padding: 20px;
+background:#F0E68C;
+margin-left:25%;
+margin-bottom:5%;
+box-shadow: -3px 3px 20px #111111 ;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="index.html">Login</a></li>
+  <li><a href="feedback.html">Feedback</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="homepage.html">Home</a></li>
+<li class="a" style="float:left">&#x1f355; Heaven's Pizza</li>
+</ul>
+<h1 align="center" style="color:red;">Login</h1>
+<div align="center" class="main">
+  <form action="page.html">
+<table border="0" width="40%" height="100%">
+<br><br><br><br>
+<tr>
+     <td> <label for="ulname"><b>Username</b></label></td>
+</tr>
+<tr>
+     <td> <input type="text" placeholder="Enter Username" name="uname"></td>
+</tr>
+<tr>
+     <td> <label for="pass"><b>Password</b></label></td>
+</tr>
+<tr>
+     <td> <input type="password" placeholder="Enter Password" name="psw" required></td>
+</tr>
+</table>
+
+    <input type="submit" value="Submit"><br>
+
+<table border="0" width="40%" height="100%">    
+<tr>
+    <td><input type="checkbox" checked="checked" name="remember"> Remember me</td>
+
+    <td align="right"><h4> New User? <a href="registration.html">Register</a></h4></td>
+</tr>
+<br>
+</table>
+<br>
+  </form>
+</div>
+
+<br><br><br><br>
+
+
+
+<div class="footer">
+  <p align="right">All rights reserved. Copyright &#169; DNP Food Factory Ltd. &nbsp;&nbsp;</p>
+</div>
+
+</body>
+</html>

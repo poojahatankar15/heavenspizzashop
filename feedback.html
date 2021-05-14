@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+margin:0;
+padding:0;
+font-family:Times New Roman;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e41212;;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 25px;
+  text-decoration: none;
+  font-size:20px;
+background-color: #e41212;
+}
+
+li a:hover {
+  background-color: #e8b93f;
+color:black;
+}
+
+.footer {
+ position: static;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+  text-align:center;
+  padding: 2px;
+  background-color:#e41212;
+  color: white;
+}
+
+.a{
+font-size:40px;
+color:white;
+text-align: center;
+ padding: 14px 16px;
+background-color:#e41212;
+}
+
+.loginbc {
+background-color:#ff006b;
+}
+  
+#feedback-container{
+width:50%;
+border-radius: 0px;
+padding: 100px;
+background:#F0E68C;
+margin-left:20%;
+margin-bottom:5%;
+box-shadow: -3px 3px 20px #111111 ;
+}
+
+.feedbackLabel{
+display:inline;
+min-width: 150px;
+margin: 0 auto;
+padding: 8px;
+text-align:left;
+font-size: 25px;
+}
+
+.feedbackInfo{
+margin: 20px 25px;
+padding: 10px;
+width: 80%;
+border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.feedbackSelection{
+margin: 5%;
+}
+
+.btnSubmit{
+  width: 30%;
+  background-color: #e41212;
+  color: white;
+  padding: 14px 20px;
+  margin-left: 35%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.selections{
+margin:25px;
+padding:auto;
+border-width:5px;  
+border-style:dotted solid;
+border-color:black;
+
+}
+#comment{
+resize: none;
+}
+.deviceList{
+margin:auto;
+}
+.deviceList label{
+padding: 2px 5px 2px 5px;
+border-radius:5px;
+}
+.deviceList input[type=checkbox]:checked + label{
+background: rgba(225,225,75,0.9);
+}
+
+
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="index.html">Login</a></li>
+  <li><a href="feedback.html">Feedback</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="homepage.html">Home</a></li>
+<li class="a" style="float:left">&#x1f355; Heaven's Pizza</li>
+</ul>
+<center><H1 style="color:red">Feedback</H1></center>
+
+<div id="feedback-container">
+
+<form align="left" action="feedback.php" method="POST">
+
+<label for="name">
+<div class="feedbackLabel" align="left"><b>Your Name:</b></div>
+</label>
+<input id="name" class="feedbackInfo" type="text" placeholder="Your name" name="name" required><br>
+
+<label for="email">
+<div class="feedbackLabel"><b>Your Email Address:</b></div>
+</label>
+<input id="email" class="feedbackInfo" type="text" placeholder="Your e-mail address" name="email" required><br>
+
+<label for="rbPgRating"><div class="feedbackLabel"><b>How Would You Rate Our Site?</b></div></label>
+<fieldset class="selections">
+<label><b>Needs Work</b></label>
+<input type="radio" name="pageRating" value="0">
+<input type="radio" name="pageRating" value="1">
+<input type="radio" name="pageRating" value="2">
+<input type="radio" name="pageRating" value="3">
+<input type="radio" name="pageRating" value="4">
+<input type="radio" name="pageRating" value="5">
+<input type="radio" name="pageRating" value="6">
+<input type="radio" name="pageRating" value="7">
+<input type="radio" name="pageRating" value="8"><input type="radio" name="rating" value="9">
+<input type="radio" name="pageRating" value="10">
+<label><b>Great</b></label>
+</fieldset>
+<label for="rbPgRating">
+<div class="feedbackLabel"><b>Where Do You Live?</b></div></label>
+<fieldset class="selections">
+<br> <label for="city"><b>City:</b></label>
+ <select   id="city" name="city">
+ <option value="mumbai">Mumbai</option>
+<option value="Pune">Pune</option>
+<option value="Nagpur">Nagpur</option>
+<option value="Nashik">Nashik</option>
+<option value="Thane">Thane</option>
+<option value="Aurangabad">Aurangabad</option>
+<option value="Kolhapur">Kolhapur</option>
+<option value="Nanded">Nanded</option>
+<option value="Akola">Akola</option>
+<option value="Latur">Latur</option>
+<option value="Jalgaon">Jalgaon</option>
+<option value="Panvel">Panvel</option>
+</select>
+</fieldset>
+
+<label for="rbPgRating"><div class="feedbackLabel"><b>What Devices Do You Use To Access Our Site?</b></div></label>
+<fieldset class="selections" >
+<span class="deviceList">
+<input type="checkbox" class="userDevice" id="Tablet" value="Tablet" name="devices"><label for="Tablet"><b>Tablet</b></label>
+</span>
+<span class="deviceList">
+<input type="checkbox" class="userDevice" id="SmartPhone" value="SmartPhone" name="devices"><label for="SmartPhone"><b>Smart Phone</b></label>
+</span>
+<span class="deviceList">
+<input type="checkbox" class="userDevice" id="Desktop" value="Desktop" name="devices"><label for="Desktop"><b>Desktop</b></label>
+</span>
+<br><br>
+<span class="deviceList">
+<input type="checkbox" class="userDevice" id="Other" value ="Other" name="devices"><label for="Other"><input type="text" class="userDevice" placeholder="Other Device" maxlength="25"></label>
+</span>
+</fieldset>
+
+<label for="comment">
+<div class="feedbackLabel"><b>Additional Comments:</b></div>
+</label>
+<br>
+<textarea id="comment" class="feedbackInfo comment" rows="5" maxlength="450" placeholder="Any additional comments! (450 characters)" name="comment"></textarea>
+<input type="submit" class="btnSubmit" id = "btnSubmit">	
+</div>
+
+</form>
+<br><br>
+<div class="footer">
+  <p align="center">All rights reserved. Copyright &#169; DNP Food Factory Ltd. &nbsp;&nbsp;</p>
+</div>
+
+
+</body>
+</html>

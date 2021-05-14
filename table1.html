@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head></head>
+<style>
+body {
+margin:0;
+padding:0;
+font-family:Times New Roman;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e41212;;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 25px;
+  text-decoration: none;
+  font-size:20px;
+background-color: #e41212;
+}
+
+li a:hover {
+  background-color: #e8b93f;
+color:black;
+}
+
+.a{
+font-size:40px;
+color:white;
+text-align: center;
+ padding: 14px 16px;
+background-color:#e41212;
+}
+
+.footer {
+ position: static;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+  text-align:center;
+  padding: 1px;
+  background-color:#e41212;
+  color: white;
+}
+
+button {
+  width: 50%;
+  background-color: #e41212;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+table th, td {
+border:none;
+text-align:middle;
+}
+  table {
+border-collapse: none;
+width: 70%;
+}
+th , td {
+padding :20px;
+}
+img{
+width:200px;
+height:100px;
+}
+ 
+a:link, a:visited {
+  text-decoration: none;
+}
+
+.cart {
+float: right;
+margin-right:200px;
+}
+
+</style>
+<ul>
+  <li><a href="index.html">Login</a></li>
+  <li><a href="feedback.html">Feedback</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="homepage.html">Home</a></li>
+<li class="a" style="float:left">&#x1f355; Heaven's Pizza</li>
+</ul>
+
+<h1 align="center" style="color:red;">Veg Pizza</h1>
+ <br>
+<div class="cart"> <a href="payment.html"><font size="6" color="blue">&#x1f6d2; Cart </font></a> </div>
+<br><br><br><br>
+<center><table>
+<tr>
+<th><img src ="img/veg1.jpg">
+<br><p><b>The Unthinkable Pizza</b></p><p>&#8377; 459</p>
+<button onclick="myMsg ()"> Add to Cart </button></th>
+
+<th><img src ="img/veg2.jpg">
+<br><p><b>Margherita</b></p><p>&#8377; 299</p>
+<button onclick="myMsg ()"> Add to Cart </button></th>
+
+<th><img src ="img/veg3.jpg">
+<br><p><b>Farmhouse</b></p><p>&#8377; 439</p>
+<button onclick="myMsg ()"> Add to Cart </button></th>
+
+</tr>
+<tr>
+<th><img src ="img/veg4.jpg">
+<br><p><b>Peppy Paneer</b></p><p><b>&#8377; 399<b></p>
+<button onclick="myMsg ()"> Add to Cart </button></th>
+
+
+<th><img src ="img/veg5.jpg">
+<br><p><b>Veg Extravaganza</b></p><p><b>&#8377; 350</b></p>
+<button onclick="myMsg ()"> Add to Cart </button></th>
+
+<th><img src ="img/veg6.jpg">
+<br><p><b>Veggie Paradise</b></p><p><b>&#8377; 219</b></p>
+<button onclick="myMsg ()"> Add to Cart </button></th>
+</table><br><br>
+
+<script>
+function myMsg() {
+alert("Added To Cart");
+}
+</script>
+
+<br><br>
+<div class="footer">
+  <p align="right">All rights reserved. Copyright &#169; DNP Food Factory Ltd. &nbsp;&nbsp;</p>
+</div>
+</body>
+</html>

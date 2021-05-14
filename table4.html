@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head></head>
+<style>
+body {
+margin:0;
+padding:0;
+font-family:Times New Roman;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e41212;;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 25px;
+  text-decoration: none;
+  font-size:20px;
+background-color: #e41212;
+}
+
+li a:hover {
+  background-color: #e8b93f;
+color:black;
+}
+
+.a{
+font-size:40px;
+color:white;
+text-align: center;
+ padding: 14px 16px;
+background-color:#e41212;
+}
+
+.footer {
+ position: static;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+  text-align:center;
+  padding: 1px;
+  background-color:#e41212;
+  color: white;
+}
+
+button {
+  width: 50%;
+  background-color: #e41212;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+table th, td {
+border:none;
+text-align:middle;
+}
+  table {
+border-collapse: none;
+width: 70%;
+}
+th , td {
+padding :20px;
+}
+img{
+width:200px;
+height:100px;
+}
+ 
+.cart {
+float: right;
+margin-right:200px;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+</style>
+<ul>
+  <li><a href="index.html">Login</a></li>
+  <li><a href="feedback.html">Feedback</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="homepage.html">Home</a></li>
+<li class="a" style="float:left">&#x1f355; Heaven's Pizza</li>
+</ul>
+ <br>
+
+<h1 align="center" style="color:red;">Combo Packages</h1>
+ <br>
+<div class="cart"> <a href="payment.html"><font size="6" color="blue">&#x1f6d2; Cart </font></a> </div>
+<br><br><br><br>
+<table align="center">
+<tr>
+<th><img src ="img/meal1.jpg">
+<br><p><b>Family Treat Veg Meals</b></p><p>&#8377; 400</p>
+<button onclick="myMsg ()"> Add to Cart </button></th>
+
+<th><img src ="img/meal2.jpg">
+<br><p><b>Family Treat Paneer Meals</b></p><p>&#8377; 899</p>
+<button onclick="myMsg ()"> Add to Cart </button></th>
+
+<th><img src ="img/meal3.jpg">
+<br><p><b>Family Treat Non Veg Meals</b></p><p>&#8377; 439</p>
+<button onclick="myMsg ()"> Add to Cart </button></th>
+
+</tr>
+<tr>
+<th><img src ="img/meal4.jpg">
+<br><p><b>Family House Party - Veg Value Combo</b></p><p><b>&#8377; 450</b></p>
+<button onclick="myMsg ()"> Add to Cart </button></th>
+
+<th><img src ="img/meal5.jpg">
+<br><p><b>Family House Party - Non Veg Value Combo</b></p><p><b>&#8377; 550</b></p>
+<button onclick="myMsg ()"> Add to Cart </button></th>
+
+<th><img src ="img/meal6.jpg">
+<br><p><b>Family House Party - Non Veg Deluxe Combo</b></p><p><b>&#8377; 599</b></p>
+<button onclick="myMsg ()"> Add to Cart </button></th>
+</table>
+<script>
+function myMsg() {
+alert("Added To Cart");
+}
+</script>
+<br><br>
+<div class="footer">
+  <p align="right">All rights reserved. Copyright  &#169; DNP Food Factory Ltd. &nbsp;&nbsp;</p>
+</div>
+</body>
+</html>

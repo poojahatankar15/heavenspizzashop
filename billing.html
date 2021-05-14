@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+margin:0;
+padding:0;
+font-family:Times New Roman;
+}
+button {
+  width: 50%;
+  background-color: #e41212;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e41212;;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 25px;
+  text-decoration: none;
+  font-size:20px;
+background-color: #e41212;
+}
+
+li a:hover {
+  background-color: #e8b93f;
+color:black;
+}
+
+.footer {
+ position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+  text-align:center;
+  padding: 2px;
+  background-color:#e41212;
+  color: white;
+}
+
+.a{
+font-size:40px;
+color:white;
+text-align: center;
+ padding: 14px 16px;
+background-color:#e41212;
+}
+
+.main {
+width:50%;
+border-radius: 0px;
+padding: 20px;
+background:#F0E68C;
+margin-left:25%;
+margin-bottom:5%;
+box-shadow: -3px 3px 20px #111111 ;
+}
+
+
+.mybutton {
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      border: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #e41212;
+      border-radius: 4px;
+    }
+
+    #entrybox {
+      width: 20%;
+      height: 43px;
+      margin-left: 5px;
+      border: 2px solid #b4b39d;
+      border-radius: 6px;
+      background-color: white;
+      text-align:center;
+    }
+
+    .bill {
+      margin-left: 23%;
+      margin-right: 20%;
+
+    }
+
+    .bill1 {
+      margin-left: 33%;
+      margin-right: 20%;
+
+    }
+
+    #sf {
+      height: 48px;
+      border: 2px solid #b4b39d;
+      border-radius: 4px;
+    }
+
+    .bill2 {
+      margin-left: 67%;
+      position: relative;
+    }
+     .bill3 {
+      margin-left: 50%;
+      position: absolute;
+    }
+
+</style>
+<script src="myScript.js"></script>
+</head>
+<body>
+<ul>
+  <li><a href="index.html">Login</a></li>
+  <li><a href="feedback.html">Feedback</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="homepage.html">Home</a></li>
+<li class="a" style="float:left">&#x1f355; Heaven's Pizza</li>
+</ul>
+
+<h1 style="color:red;"><center>Billing</center></h1>
+
+<br><br>
+<form class="bill1">
+    <select id="sf">
+<option value = "The Unthinkable Pizza">The Unthinkable Pizza</option>
+  <option value = "item1">Margherita</option>
+  <option value = "Farmhouse">Farmhouse</option>
+  <option value = "Peppy Paneer">Peppy Paneer</option>
+  <option value = "Veg Extravaganza">Veg Extravaganza</option>
+<option value = "Veggie Paradise">Veggie Paradise</option>
+ <option value = "Superme">Creamy Tomato Pasta Pizza - Non Veg</option>
+  <option value = "Chicken Fiesta">Chicken Fiesta</option>
+<option value = "Indi Chicken Tikka">Indi Chicken Tikka</option>
+  <option value = "Chicken Golden">Chicken Golden Delight</option>
+  <option value = "Chicken Pepperoni">Chicken Farmhouse</option>
+  <option value = "Chicken Pepperoni">Chicken Pepperoni</option>
+  <option value = "Dominar Pizza">Family Treat Veg Meals</option>
+  <option value = "7UP Combo">Family Treat Paneer Meals</option>
+  <option value = "Pasta Pizza Specials">Family Treat Non Veg Meals </option>
+  <option value = "Movie Marathons Specials">Veg Value Combo</option>
+<option value = "Work from Home Veg Treat">Non Veg Value Combo</option>
+  <option value = "Work from Home Non Veg Treat">Non Veg Deluxe Combo</option>
+  <option value = "Choco Lava Cake">Choco Lava Cake</option>
+  <option value = "Butterscotch Mousse Cake">Butterscotch Mousse Cake</option>
+  <option value = "Brownie Fantasy">Brownie Fantasy</option>
+<option value = "Sea Weed Shushi">Coco Cola</option>
+  <option value = "Slice ">Slice </option>
+<option value = "7 Up">7Up</option>
+<option value = "Mirinda">Mirinda</option>
+  <option value = "Cherry Pie">Lipton Ice Tea</option>
+  <option value = "Pepsi Black Can">Pepsi Black Can</option>
+  <option value = "Cutting Fruits">Paneer Tikka Stuffed Garlic Bread</option>
+  <option value = "Fruits Salad">Chicken Pepperoni Stuffed Garlic Bread</option>
+<option value = "French Fries">Chicken Meatballs Peri-Peri Seasoning</option>
+<option value = "French Fries Combo">Roasted Chicken Wings Peri-Peri</option>
+<option value = "French Fries Combo">Boneless Chicken Wings Peri-Peri</option><option value = "French Fries Combo">Garlic Breadsticks</option>
+
+</select>
+    <input type="text" id="entrybox" pattern="\d*" placeholder="Input Amount">&nbsp;<b>Quantity</b>&nbsp;&nbsp;
+    <input type="button" value="Add to Cart" class="mybutton" id="getme">
+  </form>
+  <br><br>
+  <textarea class="bill" cols="100" rows="12" id="writeme"></textarea>
+  <br>
+  <input type="submit" value="Clear Textarea" class="mybutton bill3" id="clr">
+  <input type="submit" value="Pay" class="mybutton bill2" id="out">
+  
+
+<br><br><br><br><br><br><br><br>
+</div>
+<div class="footer">
+  <p align="right">All rights reserved. Copyright © DNP Food Factory Ltd. &nbsp;&nbsp;</p>
+</div>
+</body>
+</html>
+
+
+
+
+
